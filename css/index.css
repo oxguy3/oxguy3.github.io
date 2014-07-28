@@ -1,0 +1,30 @@
+body {
+  padding-top: 50px;
+}
+
+#noScriptAlert {
+  margin-top: 20px;
+}
+
+#experienceList img.media-object, #educationList img.media-object {
+  height: 64px;
+  width: 64px;
+}
+
+#projectList a.thumbnail {
+  max-width: 180px;
+}
+
+#projectsLightboxImg {
+  width: 100%;
+}
+
+@media print {
+  body {
+    padding-top: 0;
+  }
+  
+  .media>a[href]:after {
+    content: "";
+  }
+}
