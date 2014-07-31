@@ -6,6 +6,10 @@ body {
   margin-top: 20px;
 }
 
+.h3-octicon {
+  font-size: 24px;
+}
+
 #experienceList img.media-object, #educationList img.media-object {
   height: 64px;
   width: 64px;
