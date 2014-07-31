@@ -19,10 +19,6 @@ body {
   margin-bottom: 30px;
 }
 
-/*#projectList a.thumbnail {
-  max-width: 180px;
-}*/
-
 #projectsLightboxImg {
   width: 100%;
 }
@@ -32,7 +28,16 @@ body {
     padding-top: 0;
   }
   
-  .media>a[href]:after {
+  .project-row {
+    page-break-inside: avoid;
+  }
+  
+  a.project-thumbnail[href]:after, .media a[href]:after {
     content: "";
+  }
+  
+  /* workaround because printing uses the XS grid in most browsers */
+  .project-thumbnail {
+    max-width: 200px ! important;
   }
 }
