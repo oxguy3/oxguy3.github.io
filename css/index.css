@@ -11,9 +11,17 @@ body {
   width: 64px;
 }
 
-#projectList a.thumbnail {
-  max-width: 180px;
+.project-heading {
+  margin-top: 2px;
 }
+
+.project-content {
+  margin-bottom: 30px;
+}
+
+/*#projectList a.thumbnail {
+  max-width: 180px;
+}*/
 
 #projectsLightboxImg {
   width: 100%;
