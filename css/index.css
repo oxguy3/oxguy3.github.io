@@ -23,7 +23,7 @@ body {
   margin-bottom: 30px;
 }
 
-#projectsLightboxImg {
+.projectsLightboxImg {
   width: 100%;
 }
 

@@ -2,9 +2,19 @@ var PAGE_TITLE_PREFIX = "Hayden Schiff " + String.fromCharCode(8226) + " ";
 
 // link the navbar tabs to the tab panes
 $('#navbarTablist a').click(function (e) {
-  //e.preventDefault();
+  e.preventDefault();
+  
+  // update the url hash
+  location.hash = e.target.hash;
+  $(window).scrollTop();
+  
+  // switch tabs
   $(this).tab('show');
+  
+  // update the page title
   document.title = PAGE_TITLE_PREFIX + $(this).html();
+  
+  // hide the navbar dropdown on XS screens
   $("#navbarCollapse").removeClass("in");
 });
 
@@ -13,11 +23,12 @@ $('#navbarTitle').click(function () {
   $('#navbarTablistResume').click();
 });
 
-$('#projectsLightbox').on('show.bs.modal', function (e) {
+/*$('#projectsLightbox').on('show.bs.modal', function (e) {
   var imageUrl =  $(e.relatedTarget).attr("href");
-  $("#projectsLightboxAnchor").attr("href", imageUrl);
-  $("#projectsLightboxImg").attr("src", imageUrl);
-});
+  console.log(imageUrl);
+  $(".projectsLightboxAnchor").addClass("hidden");
+  $(".projectsLightboxAnchor[href='"+imageUrl+"']").removeClass("hidden");
+});*/
 
 $(document).ready(function() {
   
