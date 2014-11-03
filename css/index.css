@@ -2,14 +2,6 @@ body {
   padding-top: 50px;
 }
 
-#noScriptAlert {
-  margin-top: 20px;
-}
-
-.h3-octicon {
-  font-size: 24px;
-}
-
 #experienceList img.media-object, #educationList img.media-object {
   height: 64px;
   width: 64px;
@@ -25,6 +17,98 @@ body {
 
 .projectsLightboxImg {
   width: 100%;
+}
+
+.skill-box {
+  margin-bottom: 10px;
+}
+
+.skill-icon {
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-icon .fa {
+  font-size: 85%;
+  position: relative;
+  top:-7px;
+}
+
+.skill-icon-html {
+  color: #d28445;
+}
+.skill-icon-css {
+  color: #6A9fb5;
+}
+.skill-icon-javascript {
+  color: #f4bf75;
+}
+.skill-icon-php {
+  color: #528da6;
+}
+.skill-icon-sql {
+  color: #75B5AA;
+}
+.skill-icon-java {
+  color: #ba4748;
+}
+.skill-icon-jquery {
+  color: #6a9fb5;
+}
+.skill-icon-bootstrap {
+  color: #6f5499;
+}
+.skill-icon-git {
+  color: #d28445;/*#f14e32*/
+}
+.skill-icon-apache {
+  color: #557697;
+}
+.skill-icon-mysql {
+  color: #d28445;
+}
+.skill-icon-nodejs {
+  color: #80bd01;
+}
+.skill-icon-wordpress {
+  color: #1e8cbe;
+}
+.skill-icon-tumblr {
+  color: #536b8f;
+}
+.skill-icon-android {
+  color: #9acd00;
+}
+.skill-icon-eclipse {
+  color: #645499;
+}
+.skill-icon-dreamweaver {
+  color: #90b836;
+}
+
+.skill-label {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  margin-top:0;
+  padding-top:0;
+}
+
+.skill-score {
+  font-size: 1em;
+  text-align: center;
+}
+
+.skill-score-good:before {
+  content: "\f005\f006\f006";
+}
+.skill-score-great:before {
+  content: "\f005\f005\f006";
+}
+.skill-score-excellent:before {
+  content: "\f005\f005\f005";
 }
 
 @media print {

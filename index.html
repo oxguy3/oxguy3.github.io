@@ -9,9 +9,11 @@
 
   <title>Hayden Schiff</title>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/octicons.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/devicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -53,22 +55,23 @@
 
 	<div class="container">
     
-    <!--<div class="alert alert-danger" id="noScriptAlert" role="alert">
-      <strong>Uh oh!</strong> This site requires JavaScript to function; please enable JavaScript and refresh the page.
-    </div>
-    <script type="text/javascript">$("#noScriptAlert").addClass("hidden");</script>-->
-    
     <div id="siteTitleBlock" class="page-header text-center">
       <h1>Hayden Schiff</h1>
-      <h4 class="text-muted">haydenschiff<span class="octicon octicon-mention"></span>gmail.com</h4>
+      <h4><a class="text-muted" href="mailto:haydenschiff@gmail.com">haydenschiff@gmail.com</a></h4>
       <h4 class="text-muted text-uppercase">Programmer &bull; Web Developer</h4>
     </div>
     
 	  <div class="tab-content">
     
+      <div class="tab-pane active">
+        <div class="alert alert-info" role="alert">
+          <strong>Uh oh!</strong> This site requires JavaScript to function; please enable JavaScript and refresh the page.
+        </div>
+      </div>
+    
       <div class="tab-pane" id="resume">
         
-        <h3>Experience <span class="octicon octicon-briefcase text-muted h3-octicon"></span></h3>
+        <h3>Experience <i class="fa fa-history text-muted"></i></h3>
         <ul class="media-list" id="experienceList">
           <li class="media">
             <a class="pull-left" href="http://ella.net">
@@ -81,16 +84,104 @@
           </li>
         </ul><!--/#experienceList -->
         
-        <h3>Skills <span class="octicon octicon-tools text-muted h3-octicon"></span></h3>
-        <ul>
+        <h3>Skills <i class="fa fa-cogs text-muted"></i></h3>
+        <div class="row">
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-html"><span class="devicons devicons-html5"></span></div>
+            <div class="skill-label">HTML</div>
+            <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-css"><span class="devicons devicons-css3"></span></div>
+            <div class="skill-label">CSS</div>
+            <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-javascript"><span class="devicons devicons-javascript"></span></div>
+            <div class="skill-label">JavaScript</div>
+            <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-php"><span class="devicons devicons-php"></span></div>
+            <div class="skill-label">PHP</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-sql"><span class="devicons devicons-database"></span></div>
+            <div class="skill-label">SQL</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-java"><span class="devicons devicons-java"></span></div>
+            <div class="skill-label">Java</div>
+            <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-jquery"><span class="devicons devicons-jquery"></span></div>
+            <div class="skill-label">jQuery</div>
+            <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-bootstrap"><span class="devicons devicons-bootstrap"></span></div>
+            <div class="skill-label">Bootstrap</div>
+            <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-git"><span class="devicons devicons-git"></span></div>
+            <div class="skill-label">Git</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-apache"><i class="fa fa-globe"></i></div>
+            <div class="skill-label">Apache</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-mysql"><span class="devicons devicons-mysql"></span></div>
+            <div class="skill-label">MySQL</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-nodejs"><span class="devicons devicons-nodejs_small"></span></div>
+            <div class="skill-label">Node.js</div>
+            <div class="skill-score"><span class="fa skill-score-good"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-wordpress"><span class="devicons devicons-wordpress"></span></div>
+            <div class="skill-label">WordPress</div>
+            <div class="skill-score"><span class="fa skill-score-good"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-tumblr"><i class="fa fa-tumblr"></i></div>
+            <div class="skill-label">Tumblr</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-android"><span class="devicons devicons-android"></span></div>
+            <div class="skill-label">Android</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-eclipse"><span class="devicons devicons-eclipse"></span></div>
+            <div class="skill-label">Eclipse</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+          <div class="skill-box col-sm-2 col-xs-4">
+            <div class="skill-icon skill-icon-dreamweaver"><span class="devicons devicons-dreamweaver"></span></div>
+            <div class="skill-label">Dreamweaver</div>
+            <div class="skill-score"><span class="fa skill-score-great"></span></div>
+          </div>
+        </div>
+        
+        <!--<ul>
           <li><strong>Languages:</strong> HTML, CSS, JavaScript, PHP, SQL, Java</li>
           <li><strong>Supporting technologies:</strong> jQuery, Bootstrap 3, Git, Maven</li>
           <li><strong>Applications:</strong> Dreamweaver, Eclipse, Photoshop, Illustrator</li>
           <li><strong>Server software:</strong> Apache, MySQL, Node.js</li>
           <li><strong>Development platforms:</strong> WordPress, Tumblr, Android</li>
-        </ul>
+        </ul>-->
         
-        <h3>Education <span class="octicon octicon-mortar-board text-muted h3-octicon"></span></h3>
+        <h3>Education <i class="fa fa-graduation-cap text-muted"></i></h3>
         <ul class="media-list" id="educationList">
           <li class="media">
             <a class="pull-left" href="http://rochester.edu">
@@ -201,7 +292,7 @@
             2 Forest Hill Drive<br>
             Cincinnati, OH 45208<br>
             <br>
-            <strong>haydenschiff<span class="octicon octicon-mention"></span>gmail.com</strong>
+            <strong><a href="mailto:haydenschiff@gmail.com">haydenschiff@gmail.com</a></strong>
           </address>
         </div>
       </div><!--/.tab-pane -->
@@ -211,15 +302,16 @@
   <footer>
     <hr>
     <p class="pull-right">
-      <a href="https://twitter.com/oxguy3" class="btn btn-default btn-xs"><span class="octicon octicon-mention"></span> Twitter</a>
-      <a href="https://github.com/oxguy3" class="btn btn-default btn-xs"><span class="octicon octicon-mark-github"></span> GitHub</a>
+      <a href="mailto:haydenschiff@gmail.com" class="btn btn-default btn-xs"><i class="fa fa-envelope"></i> Email</a>
+      <a href="https://twitter.com/oxguy3" class="btn btn-default btn-xs"><i class="fa fa-twitter"></i> Twitter</a>
+      <a href="https://github.com/oxguy3" class="btn btn-default btn-xs"><i class="fa fa-github-alt"></i> GitHub</a>
     </p>
     <p>&copy; 2014 Hayden Schiff</p>
   </footer>
 	  
 	</div><!--/.container -->
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
 </body>
