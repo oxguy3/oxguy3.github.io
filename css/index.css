@@ -1,3 +1,7 @@
+.nobr {
+  white-space: nowrap;
+}
+
 body {
   padding-top: 50px;
 }
@@ -114,6 +118,10 @@ body {
 @media print {
   body {
     padding-top: 0;
+  }
+  
+  .skill-box {
+    page-break-inside: avoid;
   }
   
   .project-row {

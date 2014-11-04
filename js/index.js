@@ -23,13 +23,6 @@ $('#navbarTitle').click(function () {
   $('#navbarTablistResume').click();
 });
 
-/*$('#projectsLightbox').on('show.bs.modal', function (e) {
-  var imageUrl =  $(e.relatedTarget).attr("href");
-  console.log(imageUrl);
-  $(".projectsLightboxAnchor").addClass("hidden");
-  $(".projectsLightboxAnchor[href='"+imageUrl+"']").removeClass("hidden");
-});*/
-
 $(document).ready(function() {
   
   // if there's a hash in the URL, go to the correct tab pane
@@ -43,4 +36,18 @@ $(document).ready(function() {
   $(".tab-pane").addClass("fade");
   $("#"+hash).addClass("in");
   
+});
+
+// tooltips for skills
+$('.skill-score-good').tooltip({
+    title: 'Good',
+    placement: 'bottom'
+});
+$('.skill-score-great').tooltip({
+    title: 'Great',
+    placement: 'bottom'
+});
+$('.skill-score-excellent').tooltip({
+    title: 'Excellent',
+    placement: 'bottom'
 });
