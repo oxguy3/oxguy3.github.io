@@ -40,7 +40,7 @@ $(document).ready(function() {
     hash = window.location.hash.substring(1);
   }
   $("#"+hash).addClass("active");
-  $('a[href=#'+hash+']').click();
+  $('#navbarTablist a[href=#'+hash+']').click();
   
   $(".tab-pane").addClass("fade");
   $("#"+hash).addClass("in");
