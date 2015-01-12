@@ -6,9 +6,24 @@ body {
   padding-top: 50px;
 }
 
+.email-link {
+  color: inherit;
+}
+
 #experienceList img.media-object, #educationList img.media-object {
   height: 64px;
   width: 64px;
+  position: absolute;
+}
+
+.media-body {
+  margin-left: 74px;
+  position: relative;
+  width: auto;
+}
+
+.media {
+  min-height: 64px; /* necessary for the page breaks to not ignore absolutely positioned images*/
 }
 
 .project-heading {
@@ -33,6 +48,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 767px) {
+  .skill-icon {
+    font-size: 3.5em;
+  }
+}
+
 
 .skill-icon .fa {
   font-size: 85%;
@@ -105,6 +127,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .skill-label, .skill-score {
+    font-size: 0.85em;
+  }
+}
+
 .skill-score-good:before {
   content: "\f005\f006\f006";
 }
@@ -115,6 +143,24 @@ body {
   content: "\f005\f005\f005";
 }
 
+.skill-legend-parent {
+  text-align: center;
+}
+
+.skill-legend {
+  margin: 4px auto;
+  padding: 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: inline-block;
+}
+
+.skill-legend-item {
+  margin: 4px 10px 4px 4px;
+  display: inline;
+  white-space: nowrap;
+}
+
 @media print {
   body {
     padding-top: 0;
@@ -122,13 +168,18 @@ body {
   
   .skill-box {
     page-break-inside: avoid;
+    width: 16.66666667%; /*14.28571428%*/
+  }
+
+  .media {
+    page-break-inside: avoid;
   }
   
   .project-row {
     page-break-inside: avoid;
   }
   
-  a.project-thumbnail[href]:after, .media a[href]:after {
+  a.project-thumbnail[href]:after, .media a[href]:after, a.email-link[href]:after {
     content: "";
   }
   

@@ -6,7 +6,11 @@ $('#navbarTablist a').click(function (e) {
   
   // update the url hash
   location.hash = e.target.hash;
-  $(window).scrollTop();
+  //$(window).scrollTop();
+  window.scrollTo(0, 0);         // execute it straight away
+  setTimeout(function() {
+    window.scrollTo(0, 0);     // run it a bit later also for browser compatibility
+  }, 1);
   
   // switch tabs
   $(this).tab('show');
@@ -40,14 +44,14 @@ $(document).ready(function() {
 
 // tooltips for skills
 $('.skill-score-good').tooltip({
-    title: 'Good',
+    title: 'Proficiency: Good',
     placement: 'bottom'
 });
 $('.skill-score-great').tooltip({
-    title: 'Great',
+    title: 'Proficiency: Great',
     placement: 'bottom'
 });
 $('.skill-score-excellent').tooltip({
-    title: 'Excellent',
+    title: 'Proficiency: Excellent',
     placement: 'bottom'
 });

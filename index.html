@@ -36,10 +36,10 @@
 	  <div class="container">
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle" id="navbarToggle" data-toggle="collapse" data-target="#navbarCollapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
+  			<span class="sr-only">Toggle navigation</span>
+  			<span class="icon-bar"></span>
+  			<span class="icon-bar"></span>
+  			<span class="icon-bar"></span>
 		  </button>
 		  <a class="navbar-brand" id="navbarTitle" href="#resume">Hayden Schiff</a>
 		</div>
@@ -57,7 +57,7 @@
     
     <div id="siteTitleBlock" class="page-header text-center">
       <h1>Hayden Schiff</h1>
-      <h4><a class="text-muted" href="mailto:haydenschiff@gmail.com">haydenschiff@gmail.com</a></h4>
+      <h4 class="text-muted"><a class="email-link" href="mailto:haydenschiff@gmail.com">haydenschiff@gmail.com</a> &bull; <span class="nobr">513-508-6431</span></h4>
       <h4 class="text-muted text-uppercase">Programmer &bull; <span class="nobr">Web Developer</span></h4>
     </div>
     
@@ -71,10 +71,10 @@
     
       <div class="tab-pane" id="resume">
         
-        <h3>Experience <i class="fa fa-history text-muted"></i></h3>
+        <h3>Experience <i class="fa fa-briefcase text-muted"></i></h3>
         <ul class="media-list" id="experienceList">
           <li class="media">
-            <a class="pull-left" href="http://ella.net">
+            <a href="http://ella.net">
               <img class="media-object" src="images/ellanet.png" alt="Ellanet logo">
             </a>
             <div class="media-body">
@@ -87,7 +87,23 @@
         <h3>Skills <i class="fa fa-cogs text-muted"></i></h3>
         <div class="row">
           <div class="col-xs-12 visible-xs-block">
-            <table class="table table-bordered">
+            <div class="skill-legend-parent">
+              <div class="skill-legend">
+                <div class="skill-legend-item">
+                  <strong>Proficiency:</strong>
+                </div>
+                <div class="skill-legend-item">
+                  <span class="fa skill-score-excellent"></span>&nbsp;&nbsp;Excellent
+                </div>
+                <div class="skill-legend-item">
+                  <span class="fa skill-score-great"></span>&nbsp;&nbsp;Great
+                </div>
+                <div class="skill-legend-item">
+                  <span class="fa skill-score-good"></span>&nbsp;&nbsp;Good
+                </div>
+              </div>
+            </div>
+<!--             <table class="table table-bordered">
               <tr>
                 <td><span class="fa skill-score-excellent"></span></td>
                 <td>Excellent</td>
@@ -100,91 +116,91 @@
                 <td><span class="fa skill-score-good"></span></td>
                 <td>Good</td>
               </tr>
-            </table>
+            </table> -->
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-html"><span class="devicons devicons-html5"></span></div>
             <div class="skill-label">HTML</div>
             <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-css"><span class="devicons devicons-css3"></span></div>
             <div class="skill-label">CSS</div>
             <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-javascript"><span class="devicons devicons-javascript"></span></div>
             <div class="skill-label">JavaScript</div>
             <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-php"><span class="devicons devicons-php"></span></div>
             <div class="skill-label">PHP</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-sql"><span class="devicons devicons-database"></span></div>
             <div class="skill-label">SQL</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-java"><span class="devicons devicons-java"></span></div>
             <div class="skill-label">Java</div>
             <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-jquery"><span class="devicons devicons-jquery"></span></div>
             <div class="skill-label">jQuery</div>
             <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-bootstrap"><span class="devicons devicons-bootstrap"></span></div>
             <div class="skill-label">Bootstrap</div>
             <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-git"><span class="devicons devicons-git"></span></div>
             <div class="skill-label">Git</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-apache"><i class="fa fa-globe"></i></div>
             <div class="skill-label">Apache</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-mysql"><span class="devicons devicons-mysql"></span></div>
             <div class="skill-label">MySQL</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-nodejs"><span class="devicons devicons-nodejs_small"></span></div>
             <div class="skill-label">Node.js</div>
             <div class="skill-score"><span class="fa skill-score-good"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+<!--           <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-wordpress"><span class="devicons devicons-wordpress"></span></div>
             <div class="skill-label">WordPress</div>
             <div class="skill-score"><span class="fa skill-score-good"></span></div>
-          </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          </div> -->
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-tumblr"><i class="fa fa-tumblr"></i></div>
-            <div class="skill-label">Tumblr</div>
+            <div class="skill-label">Tumblr themes</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-android"><span class="devicons devicons-android"></span></div>
             <div class="skill-label">Android</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-eclipse"><span class="devicons devicons-eclipse"></span></div>
             <div class="skill-label">Eclipse</div>
             <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
           </div>
-          <div class="skill-box col-sm-2 col-xs-4">
+          <div class="skill-box col-sm-2 col-xs-3">
             <div class="skill-icon skill-icon-dreamweaver"><span class="devicons devicons-dreamweaver"></span></div>
-            <div class="skill-label">Dreamweaver</div>
+            <div class="skill-label">Dream&shy;weaver</div>
             <div class="skill-score"><span class="fa skill-score-great"></span></div>
           </div>
         </div>
@@ -200,7 +216,7 @@
         <h3>Education <i class="fa fa-graduation-cap text-muted"></i></h3>
         <ul class="media-list" id="educationList">
           <li class="media">
-            <a class="pull-left" href="http://rochester.edu">
+            <a href="http://rochester.edu">
               <img class="media-object" src="images/urochester.png" alt="University of Rochester logo">
             </a>
             <div class="media-body">
@@ -209,7 +225,7 @@
             </div>
           </li>
           <li class="media">
-            <a class="pull-left" href="http://7hills.org">
+            <a href="http://7hills.org">
               <img class="media-object" src="images/7hills.png" alt="The Seven Hills School logo">
             </a>
             <div class="media-body">
@@ -217,6 +233,7 @@
               <p>Class of 2014</p>
             </div>
           </li>
+          <div class="pull-left"></div>
         </ul><!--/#educationList -->
         
         
@@ -280,25 +297,6 @@
           </div>
         </div>
         
-        <!--<div class="modal fade" id="projectsLightbox" tabindex="-1" role="dialog" aria-labelledby="lightbox">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content text-center">
-              <a href="images/steamblr.png" target="_blank" class="projectsLightboxAnchor hidden">
-                <img class="img-responsive projectsLightboxImg" src="images/steamblr.png">
-              </a>
-              <a href="images/phpstagemanager.png" target="_blank" class="projectsLightboxAnchor hidden">
-                <img class="img-responsive projectsLightboxImg" src="images/phpstagemanager.png">
-              </a>
-              <a href="images/craftboot.png" target="_blank" class="projectsLightboxAnchor hidden">
-                <img class="img-responsive projectsLightboxImg" src="images/craftboot.png">
-              </a>
-              <a href="images/coolstorybro.png" target="_blank" class="projectsLightboxAnchor hidden">
-                <img class="img-responsive projectsLightboxImg" src="images/coolstorybro.png">
-              </a>
-            </div>
-          </div>
-        </div>-->
-        
       </div><!--/.tab-pane -->
       
       
@@ -315,10 +313,9 @@
       
     </div>
   
-  <footer>
+  <footer class="hidden-print">
     <hr>
     <p class="pull-right">
-      <a href="mailto:haydenschiff@gmail.com" class="btn btn-default btn-xs"><i class="fa fa-envelope"></i> Email</a>
       <a href="https://twitter.com/oxguy3" class="btn btn-default btn-xs"><i class="fa fa-twitter"></i> Twitter</a>
       <a href="https://github.com/oxguy3" class="btn btn-default btn-xs"><i class="fa fa-github-alt"></i> GitHub</a>
     </p>
