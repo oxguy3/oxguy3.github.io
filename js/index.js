@@ -22,15 +22,20 @@ $('#navbarTablist a').click(function (e) {
   $("#navbarCollapse").removeClass("in");
 });
 
+$('a.homebox-link[href^=#]').click(function (e) {
+  var href = $(this).attr("href");
+  $("#navbarTablist a[href="+href+"]").click();
+});
+
 // clicking the navbar title takes you to the Resume page
 $('#navbarTitle').click(function () {
-  $('#navbarTablistResume').click();
+  $('#navbarTablistHome').click();
 });
 
 $(document).ready(function() {
   
   // if there's a hash in the URL, go to the correct tab pane
-  var hash = "resume";
+  var hash = "home";
   if (window.location.hash != "") {
     hash = window.location.hash.substring(1);
   }

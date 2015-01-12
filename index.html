@@ -41,11 +41,12 @@
   			<span class="icon-bar"></span>
   			<span class="icon-bar"></span>
 		  </button>
-		  <a class="navbar-brand" id="navbarTitle" href="#resume">Hayden Schiff</a>
+		  <a class="navbar-brand" id="navbarTitle" href="#home">Hayden Schiff</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 		  <ul class="nav navbar-nav" id="navbarTablist">
-        <li><a href="#resume" id="navbarTablistResume" role="tab">R&eacute;sum&eacute;</a></li>
+        <li><a href="#home" id="navbarTablistHome" role="tab">Home</a></li>
+        <li><a href="#resume" role="tab">R&eacute;sum&eacute;</a></li>
         <li><a href="#projects" role="tab">Projects</a></li>
         <li><a href="#contact" role="tab">Contact</a></li>
 		  </ul>
@@ -55,27 +56,110 @@
 
 	<div class="container">
     
-    <div id="siteTitleBlock" class="page-header text-center">
-      <h1>Hayden Schiff</h1>
-      <h4 class="text-muted">
-        <span class="page-header-line-item"><i class="fa fa-envelope-square"></i> <a class="email-link" href="mailto:haydenschiff@gmail.com">haydenschiff@gmail.com</a></span>
-        <span class="page-header-line-item"><i class="fa fa-phone-square"></i> 513-508-6431</span>
-      </h4>
-      <h4 class="text-muted text-uppercase">
-        <span class="page-header-line-item">Programmer</span>
-        <span class="page-header-line-item">Web Developer</span>
-      </h4>
-    </div>
-    
 	  <div class="tab-content">
     
       <div class="tab-pane active">
         <noscript>
-          Uh oh! This site requires JavaScript to function; please enable JavaScript and refresh the page.
+          <strong>Uh oh!</strong> This site requires JavaScript to function; please enable JavaScript and refresh the page.
         </noscript>
       </div>
+
+    
+      <div class="tab-pane" id="home">
+        
+        <div class="page-header-null"></div>
+
+        <div class="jumbotron">
+          <h1>Hey there.</h1>
+          <p>I'm Hayden, welcome to my site!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="homebox">
+              <a href="#resume" class="homebox-link">
+                <div class="homebox-icon">
+                  <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="homebox-title">
+                  R&eacute;sum&eacute;
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="homebox">
+              <a href="#projects" class="homebox-link">
+                <div class="homebox-icon">
+                  <i class="fa fa-cubes"></i>
+                </div>
+                <div class="homebox-title">
+                  Projects
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="homebox">
+              <a href="https://github.com/oxguy3" class="homebox-link">
+                <div class="homebox-icon">
+                  <i class="fa fa-github-alt"></i>
+                </div>
+                <div class="homebox-title">
+                  GitHub
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="homebox">
+              <a href="https://twitter.com/oxguy3" class="homebox-link">
+                <div class="homebox-icon">
+                  <i class="fa fa-twitter"></i>
+                </div>
+                <div class="homebox-title">
+                  Twitter
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="homebox">
+              <a href="mailto:haydenschiff@gmail.com" class="homebox-link">
+                <div class="homebox-icon">
+                  <i class="fa fa-paper-plane"></i>
+                </div>
+                <div class="homebox-title">
+                  Email
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        
+        
+      </div><!--/.tab-pane -->
+
     
       <div class="tab-pane" id="resume">
+    
+        <div id="siteTitleBlock" class="page-header text-center">
+          <h1>Hayden Schiff</h1>
+          <h4 class="text-muted">
+            <span class="page-header-line-item"><i class="fa fa-envelope-square"></i> <a class="email-link" href="mailto:haydenschiff@gmail.com">haydenschiff@gmail.com</a></span>
+            <span class="page-header-line-item"><i class="fa fa-phone-square"></i> 513-508-6431</span>
+          </h4>
+          <h4 class="text-muted text-uppercase">
+            <span class="page-header-line-item">Programmer</span>
+            <span class="page-header-line-item">Web Developer</span>
+          </h4>
+        </div>
         
         <h3>Experience <i class="fa fa-briefcase text-muted"></i></h3>
         <ul class="media-list" id="experienceList">
@@ -271,6 +355,10 @@
       
       
       <div class="tab-pane" id="projects">
+
+        <div class="page-header">
+          <h1>Projects</h1>
+        </div>
         
         <div class="row project-row">
           <div class="col-sm-4 col-md-3">
@@ -331,6 +419,11 @@
       
       
       <div class="tab-pane" id="contact">
+
+        <div class="page-header">
+          <h1>Contact</h1>
+        </div>
+
         <div class="text-center">
           <address class="lead">
             2 Forest Hill Drive<br>

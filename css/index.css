@@ -6,6 +6,38 @@ body {
   padding-top: 50px;
 }
 
+.homebox {
+  text-align: center;
+}
+
+.homebox-link {
+  color: inherit;
+  text-align: center;
+  display: block;
+  padding: 16px;
+}
+
+.homebox-link:hover {
+  text-decoration: none;
+  color: inherit;
+  background-color: #dbe9f5;/*#bdd6ec*/
+  border-radius: 5px;
+}
+
+.homebox-icon {
+  font-size: 5.5em;
+}
+
+.homebox-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+.page-header-null {
+  margin-top: 40px;
+}
+
 .page-header-line-item {
   white-space: nowrap;
   padding-left: 8px;
