@@ -44,8 +44,34 @@ $(document).ready(function() {
   
   $(".tab-pane").addClass("fade");
   $("#"+hash).addClass("in");
+
+
+
+  // apply pretty colors!
+  //prettifyHomePage();
   
 });
+
+$('#navbarTablistHome').click(function() {
+  prettifyHomePage();
+});
+
+function prettifyHomePage() {
+  // colors taken from http://flatuicolors.com/
+  var prettyColors = ["#1ABC9C", "#16A085", "#2ECC71", "#27AE60", "#3498DB", 
+    "#2980B9", "#9B59B6", "#8E44AD", "#34495E", "#2C3E50", "#F1C40F", 
+    "#F39C12", "#E67E22", "#D35400", "#E74C3C", "#C0392B"];
+
+  $('.homebox-icon').each(function() {
+    var index = Math.floor(Math.random()*prettyColors.length);
+    $(this).animate({
+      color: prettyColors[index]
+    }, 1500);
+    // $(this).css('color', prettyColors[index]);
+    prettyColors.splice(index, 1);
+  });
+  //setTimeout(prettifyHomePage, 5000);
+}
 
 // tooltips for skills
 $('.skill-score-good').tooltip({
