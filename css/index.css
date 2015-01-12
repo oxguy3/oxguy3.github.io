@@ -66,6 +66,10 @@ body {
   min-height: 64px; /* necessary for the page breaks to not ignore absolutely positioned images*/
 }
 
+.media-subheading {
+  font-style: italic;
+}
+
 .project-heading {
   margin-top: 2px;
 }
