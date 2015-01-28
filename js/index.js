@@ -58,16 +58,21 @@ $('#navbarTablistHome').click(function() {
 
 function prettifyHomePage() {
   // colors taken from http://flatuicolors.com/
-  var prettyColors = ["#1ABC9C", "#16A085", "#2ECC71", "#27AE60", "#3498DB", 
+  /*var prettyColors = ["#1ABC9C", "#16A085", "#2ECC71", "#27AE60", "#3498DB", 
     "#2980B9", "#9B59B6", "#8E44AD", "#34495E", "#2C3E50", "#F1C40F", 
-    "#F39C12", "#E67E22", "#D35400", "#E74C3C", "#C0392B"];
+    "#F39C12", "#E67E22", "#D35400", "#E74C3C", "#C0392B"];*/
+  var prettyColors = ["#2980b9", "#d35400", "#2c3e50", "#27ae60"];
 
   $('.homebox-icon').each(function() {
-    var index = Math.floor(Math.random()*prettyColors.length);
+
+    $(this).css("color", "transparent");
+
+    var index = 0; //Math.floor(Math.random()*prettyColors.length);
+    var currColor = (prettyColors.length > 0) ? prettyColors[index] : "#000000";
+
     $(this).animate({
-      color: prettyColors[index]
+      color: currColor
     }, 1500);
-    // $(this).css('color', prettyColors[index]);
     prettyColors.splice(index, 1);
   });
   //setTimeout(prettifyHomePage, 5000);
