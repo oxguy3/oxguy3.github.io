@@ -60,6 +60,7 @@ body {
   margin-left: 74px;
   position: relative;
   width: auto;
+  display:block;
 }
 
 .media {
@@ -76,6 +77,10 @@ body {
 
 .project-content {
   margin-bottom: 30px;
+}
+
+.project-content .btn i.fa {
+  padding-right: 4px;
 }
 
 .projectsLightboxImg {
@@ -213,10 +218,14 @@ body {
   .page-header {
     margin-top: 0;
   }
+
+  a.email-link {
+    text-decoration: none;
+  }
   
   .skill-box {
     page-break-inside: avoid;
-    width: 16.66666667%; /*14.28571428%*/
+    width: 12.5%; /*16.66666667%;*/
   }
 
   .media {

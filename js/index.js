@@ -11,6 +11,13 @@ $('#navbarTablist a').click(function (e) {
   setTimeout(function() {
     window.scrollTo(0, 0);     // run it a bit later also for browser compatibility
   }, 1);
+
+  // // hide the stuff we're gonna fade in
+  // var tabDiv = $(location.hash);
+  // tabDiv.finish("fadeboxes");
+  // var fadeboxes = tabDiv.find(".fadebox");
+  // fadeboxes.css("display", "none");
+  // $(".fadebox-post").css("display", "none");
   
   // switch tabs
   $(this).tab('show');
@@ -20,7 +27,26 @@ $('#navbarTablist a').click(function (e) {
   
   // hide the navbar dropdown on XS screens
   $("#navbarCollapse").removeClass("in");
+
+
+  // fadeboxes.each(function() {
+  //   addToFadeboxesQueue($(this), tabDiv);
+  // });
+  // addToFadeboxesQueue($(".fadebox-post"), tabDiv);
+
+  // tabDiv.dequeue("fadeboxes");
+
 });
+
+// function addToFadeboxesQueue(box, tabDiv) {
+//   tabDiv.queue("fadeboxes", function() {
+//     box.fadeIn({
+//       slideDown: 1500
+//     });
+//     tabDiv.dequeue("fadeboxes");
+//   })
+//   tabDiv.delay(200, "fadeboxes");
+// }
 
 $('a.homebox-link[href^=#]').click(function (e) {
   var href = $(this).attr("href");
@@ -61,7 +87,12 @@ function prettifyHomePage() {
   /*var prettyColors = ["#1ABC9C", "#16A085", "#2ECC71", "#27AE60", "#3498DB", 
     "#2980B9", "#9B59B6", "#8E44AD", "#34495E", "#2C3E50", "#F1C40F", 
     "#F39C12", "#E67E22", "#D35400", "#E74C3C", "#C0392B"];*/
-  var prettyColors = ["#2980b9", "#d35400", "#2c3e50", "#27ae60"];
+  var prettyColors = [
+    "#c0392b", // resume
+    "#16a085", // projects
+    "#2980b9", // github
+    "#d35400" // email
+  ];
 
   $('.homebox-icon').each(function() {
 
