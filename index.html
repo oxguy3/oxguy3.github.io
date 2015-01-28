@@ -9,10 +9,12 @@
 
   <title>Hayden Schiff</title>
 
+  <!-- TODO: minify and concatenate CSS files -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/flatly.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/devicons.min.css">
+  <link rel="stylesheet" href="css/strip.css">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -352,7 +354,7 @@
                 <i class="fa fa-github"></i> GitHub
               </a>
               &nbsp;
-              <a href="http://beta.coebot.tv/" class="btn btn-default" role="button" target="_blank">
+              <a href="http://beta.coebot.tv" class="btn btn-default" role="button" target="_blank">
                 <i class="fa fa-eye"></i> Demo
               </a>
             </p>
@@ -361,7 +363,7 @@
         
         <div class="row project-row">
           <div class="col-sm-4 col-md-3">
-            <a class="thumbnail project-thumbnail" href="images/steamblr.png" target="_blank">
+            <a class="thumbnail project-thumbnail strip" href="images/steamblr.png" target="_blank">
               <img class="img-responsive" src="images/steamblr.png">
             </a>
           </div>
@@ -373,7 +375,7 @@
                 <i class="fa fa-github"></i> GitHub
               </a>
               &nbsp;
-              <a href="http://steamblrdemo.tumblr.com/" class="btn btn-default" role="button" target="_blank">
+              <a href="http://steamblrdemo.tumblr.com" class="btn btn-default" role="button" target="_blank">
                 <i class="fa fa-eye"></i> Demo
               </a>
               &nbsp;
@@ -386,7 +388,7 @@
       
         <div class="row project-row">
           <div class="col-sm-4 col-md-3">
-            <a class="thumbnail project-thumbnail" href="images/phpstagemanager.png" target="_blank">
+            <a class="thumbnail project-thumbnail strip" href="images/phpstagemanager.png" target="_blank">
               <img class="img-responsive" src="images/phpstagemanager.png">
             </a>
           </div>
@@ -403,13 +405,13 @@
       
         <div class="row project-row">
           <div class="col-sm-4 col-md-3">
-            <a class="thumbnail project-thumbnail" href="images/craftboot.png" target="_blank">
+            <a class="thumbnail project-thumbnail strip" href="images/craftboot.png" target="_blank">
               <img class="img-responsive" src="images/craftboot.png">
             </a>
           </div>
           <div class="col-sm-8 col-md-9 project-content">
             <h3 class="project-heading">CraftBoot</h3>
-            <p>A bootstrapper for <a href="http://github.com/skcraft/launcher" target="_blank">SKCraft Launcher</a> that makes the powerful Minecraft modpack launcher more accessible to <span class="nobr">server owners.</span></p>
+            <p>A bootstrapper for <a href="https://github.com/skcraft/launcher" target="_blank">SKCraft Launcher</a> that makes the powerful Minecraft modpack launcher more accessible to <span class="nobr">server owners.</span></p>
             <p>
               <a href="https://github.com/oxguy3/craftboot" class="btn btn-primary" role="button" target="_blank">
                 <i class="fa fa-github"></i> GitHub
@@ -420,7 +422,7 @@
       
         <div class="row project-row">
           <div class="col-sm-4 col-md-3">
-            <a class="thumbnail project-thumbnail" href="images/coolstorybro.png" target="_blank">
+            <a class="thumbnail project-thumbnail strip" href="images/coolstorybro.png" target="_blank">
               <img class="img-responsive" src="images/coolstorybro.png">
             </a>
           </div>
@@ -437,7 +439,7 @@
       
         <div class="row project-row">
           <div class="col-sm-4 col-md-3">
-            <a class="thumbnail project-thumbnail" href="images/mywheelsonline.png" target="_blank">
+            <a class="thumbnail project-thumbnail strip" href="images/mywheelsonline.png" target="_blank">
               <img class="img-responsive" src="images/mywheelsonline-cropped.png">
             </a>
           </div>
@@ -458,9 +460,10 @@
     <footer class="hidden-print">
       <hr>
       <p class="pull-right">
-        <a href="https://github.com/oxguy3" target="_blank" class="btn btn-default btn-xs"><i class="fa fa-github"></i> GitHub</a>
+        <a href="//github.com/oxguy3" target="_blank" class="btn btn-default btn-xs"><i class="fa fa-github"></i> GitHub</a>
       </p>
-      <p>&copy; 2015 Hayden Schiff</p>
+      <p class="footer-element">&copy; 2015 Hayden Schiff</p>
+      <p class="footer-element"><a href="http://stripjs.com">Strip</a> by Nick Stakenburg</p>
     </footer>
   </div>
 	  
@@ -468,6 +471,7 @@
   
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.color-2.1.2.js"></script>
+  <script src="js/strip.pkgd.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
 </body>

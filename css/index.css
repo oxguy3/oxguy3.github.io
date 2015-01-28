@@ -237,6 +237,12 @@ body {
   white-space: nowrap;
 }
 
+
+.footer-element {
+  float: left;
+  margin-right: 8px;
+}
+
 @media print {
   body {
     padding-top: 0;
