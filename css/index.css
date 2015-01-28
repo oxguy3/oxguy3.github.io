@@ -83,12 +83,39 @@ body {
   padding-right: 4px;
 }
 
-.projectsLightboxImg {
-  width: 100%;
+.project-content .btn {
+  margin-bottom: 4px;
+}
+
+.img-thumbnail-placeholder {
+  padding: 50px 20px;
+  background-color: #bdc3c7;
+  text-align: center;
+  font-style: italic;
+  color: #ecf0f1;
+  font-size: 18px;
 }
 
 .skill-box {
   margin-bottom: 10px;
+  float: left;
+  width: 25%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .skill-box {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .skill-box {
+    width: 16.66666667%;
+  }
 }
 
 .skill-icon {
