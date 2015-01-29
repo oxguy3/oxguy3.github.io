@@ -240,7 +240,7 @@ body {
 
 .footer-element {
   float: left;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 @media print {
