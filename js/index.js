@@ -90,8 +90,9 @@ function prettifyHomePage() {
   var prettyColors = [
     "#c0392b", // resume
     "#16a085", // projects
-    "#2980b9", // github
-    "#d35400" // email
+    "#2c3e50", // github
+    "#2980b9", // linkedin
+    "#f39c12" // email
   ];
 
   $('.homebox-icon').each(function() {
