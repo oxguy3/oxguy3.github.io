@@ -90,7 +90,7 @@ function prettifyHomePage() {
   var prettyColors = [
     "#c0392b", // resume
     "#16a085", // projects
-    "#2c3e50", // github
+    "#34495e", // github
     "#2980b9", // linkedin
     "#f39c12" // email
   ];
