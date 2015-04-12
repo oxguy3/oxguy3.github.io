@@ -208,6 +208,7 @@ body {
   font-style: italic;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1;
+  vertical-align: text-top;
 }
 .noicon-maven:before {
   content: 'm';
