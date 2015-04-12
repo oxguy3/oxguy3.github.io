@@ -175,6 +175,9 @@ body {
 .skill-icon-git {
   color: #d28445;/*#f14e32*/
 }
+.skill-icon-maven {
+  color: #e67e22;
+}
 .skill-icon-apache {
   color: #557697;
 }
@@ -198,6 +201,16 @@ body {
 }
 .skill-icon-dreamweaver {
   color: #90b836;
+}
+
+.noicon-maven {
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
+.noicon-maven:before {
+  content: 'm';
 }
 
 .skill-label {

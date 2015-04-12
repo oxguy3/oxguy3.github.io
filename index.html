@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Hayden Schiff, programmer/web developer">
   <meta name="author" content="Hayden Schiff">
+  <meta name="google-site-verification" content="em_CCqIepc-mKuqUKymAjcPxp_48PsmDTLc1hbORMaw" />
 
   <title>Hayden Schiff</title>
 
@@ -73,6 +74,7 @@
 	  <div class="tab-content">
     
       <div class="tab-pane active" id="nojavascript">
+        <script>document.getElementById("nojavascript").style.display="none";</script>
 
         <div class="page-header-null"></div>
 
@@ -80,7 +82,6 @@
           <strong>Uh oh!</strong> You must have JavaScript enabled in your browser to use this website. If you don't know how to enable JavaScript, please see <a href="http://www.enable-javascript.com/" target="_blank" class="alert-link">this instructional website</a>.
         </div>
       </div>
-      <script>document.getElementById("nojavascript").style.display="none";</script>
 
     
       <div class="tab-pane" id="home">
@@ -229,6 +230,11 @@
             <div class="skill-box">
               <div class="skill-icon skill-icon-php"><span class="devicons devicons-php"></span></div>
               <div class="skill-label">PHP</div>
+              <div class="skill-score"><span class="fa skill-score-excellent"></span></div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-icon skill-icon-nodejs"><span class="devicons devicons-nodejs_small"></span></div>
+              <div class="skill-label">Node.js</div>
               <div class="skill-score"><span class="fa skill-score-great"></span></div>
             </div>
             <div class="skill-box">
@@ -257,6 +263,11 @@
               <div class="skill-score"><span class="fa skill-score-great"></span></div>
             </div>
             <div class="skill-box">
+              <div class="skill-icon skill-icon-maven"><span class="noicon-maven"></span></div>
+              <div class="skill-label">Maven</div>
+              <div class="skill-score"><span class="fa skill-score-good"></span></div>
+            </div>
+            <div class="skill-box">
               <div class="skill-icon skill-icon-apache"><i class="fa fa-globe"></i></div>
               <div class="skill-label">Apache</div>
               <div class="skill-score"><span class="fa skill-score-great"></span></div>
@@ -265,11 +276,6 @@
               <div class="skill-icon skill-icon-mysql"><span class="devicons devicons-mysql"></span></div>
               <div class="skill-label">MySQL</div>
               <div class="skill-score"><span class="fa skill-score-great"></span></div>
-            </div>
-            <div class="skill-box">
-              <div class="skill-icon skill-icon-nodejs"><span class="devicons devicons-nodejs_small"></span></div>
-              <div class="skill-label">Node.js</div>
-              <div class="skill-score"><span class="fa skill-score-good"></span></div>
             </div>
             <!--<div class="skill-box">
               <div class="skill-icon skill-icon-tumblr"><i class="fa fa-tumblr"></i></div>
@@ -334,22 +340,6 @@
                 <p>Class of 2014</p>
               </div>
             </li>
-  <!--           <li class="media">
-              <a href="http://idtech.com">
-                <img class="media-object" src="images/idtech.png" alt="id Tech logo">
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">iD Tech</h4>
-                <p>
-                  Attended several technology summer camps, including:
-                  <ul>
-                    <li>Google Android App Development, Summer 2011 (iD Programming Academy at MIT)</li>
-                    <li>Level Design - Unreal Development Kit, Summer 2011 (iD Gaming Academy at Harvard)</li>
-                    <li>C++ and Java Development, Summer 2010 (iD Tech Camp at Brown)</li>
-                  </ul>
-                </p>
-              </div>
-            </li> -->
           </ul><!--/#educationList -->
         </div>
         
@@ -372,7 +362,7 @@
             </span>
           </div>
           <div class="col-sm-8 col-md-9 project-content">
-            <h3 class="project-heading">CoeBot.tv <small>beta</small></h3>
+            <h3 class="project-heading">CoeBot.tv</h3>
             <p>A website interface for CoeBot, a bot that moderates chat channels on the popular livestreaming <span class="nobr">service Twitch.</span></p>
             <p>
               <a href="http://coebot.tv" class="btn btn-primary" role="button" target="_blank">
@@ -380,6 +370,23 @@
               </a>
               &nbsp;
               <a href="https://github.com/oxguy3/coebot-www" class="btn btn-default" role="button" target="_blank">
+                <i class="fa fa-fw fa-github"></i> GitHub
+              </a>
+            </p>
+          </div>
+        </div>
+        
+        <div class="row project-row">
+          <div class="col-sm-4 col-md-3">
+            <a class="thumbnail project-thumbnail strip" href="images/imliveyo.png" target="_blank">
+              <img class="img-responsive" src="images/imliveyo.png">
+            </a>
+          </div>
+          <div class="col-sm-8 col-md-9 project-content">
+            <h3 class="project-heading">ImLiveYo</h3>
+            <p>A replacement for the email notifications on livestreaming service <a href="http://twitch.tv" target="_blank">Twitch</a> which sends a <a href="http://justyo.co" target="_blank">Yo</a> whenever any channel a user follows <span class="nobr">goes live.</span></p>
+            <p>
+              <a href="https://github.com/oxguy3/ImLiveYo" class="btn btn-primary" role="button" target="_blank">
                 <i class="fa fa-fw fa-github"></i> GitHub
               </a>
             </p>
