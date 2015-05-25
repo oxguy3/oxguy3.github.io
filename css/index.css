@@ -27,7 +27,7 @@ body {
   padding: 16px;
 }
 
-.homebox-link:hover {
+.homebox-link:hover, .homebox-link:active {
   text-decoration: none;
   color: inherit;
   background-color: #dbe9f5;/*#bdd6ec*/
