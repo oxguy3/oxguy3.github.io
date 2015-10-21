@@ -92,7 +92,8 @@ function prettifyHomePage() {
     "#16a085", // projects
     "#34495e", // github
     "#2980b9", // linkedin
-    "#f39c12" // email
+    "#f1c40f", // stackoverflow
+    "#8e44ad" // email
   ];
 
   $('.homebox-icon').each(function() {
