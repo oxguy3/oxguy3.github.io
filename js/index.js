@@ -92,7 +92,7 @@ function prettifyHomePage() {
     "#16a085", // projects
     "#34495e", // github
     "#2980b9", // linkedin
-    "#f1c40f", // stackoverflow
+    "#e7832b", // stackoverflow
     "#8e44ad" // email
   ];
 
