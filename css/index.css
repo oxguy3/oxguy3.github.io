@@ -62,6 +62,22 @@ a.homebox-link:active {
   line-height: 133.33333333%;
 }
 
+.street-address-line {
+  display: block;
+}
+.street-address-comma {
+  display: none;
+}
+
+@media( min-width: 420px ) {
+  .street-address-line {
+    display: inline;
+  }
+  .street-address-comma {
+    display: inline;
+  }
+}
+
 .email-link {
   color: inherit;
 }
@@ -171,6 +187,9 @@ a.homebox-link:active {
 }
 .skill-icon-java {
   color: #ba4748;
+}
+.skill-icon-python {
+  color: #2980b9;
 }
 .skill-icon-jquery {
   color: #6a9fb5;
