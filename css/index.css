@@ -20,18 +20,24 @@ body {
   text-align: center;
 }
 
-.homebox-link {
+a.homebox-link {
   color: inherit;
   text-align: center;
   display: block;
   padding: 16px;
 }
 
-.homebox-link:hover, .homebox-link:active {
-  text-decoration: none;
-  color: inherit;
+a.homebox-link:hover, a.homebox-link:active {
   background-color: #dbe9f5;/*#bdd6ec*/
   border-radius: 5px;
+}
+
+a.homebox-link:link,
+a.homebox-link:visited,
+a.homebox-link:hover,
+a.homebox-link:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .homebox-title {
